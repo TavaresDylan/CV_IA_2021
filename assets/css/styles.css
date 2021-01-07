@@ -27,6 +27,7 @@ header{
     height: 120px;
 }
 h1{
+    display: flex;
     margin-top: 15px;
     font-family: 'Kanit', sans-serif;
     color: #ffffff;
@@ -132,12 +133,26 @@ h3:after{
 }
 
 #contact-container{
-    background: grey;
+    background:#349250;
     padding: 34px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: white;
 }
 #contact-container>div{
     display: flex;
     flex-direction: column;
+}
+#second-container{
+    width: 80%;
+    overflow: hidden;
+}
+.img-skills{
+    width: 62px;
+}
+
+.skills-box>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
