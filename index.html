@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body class="">
-    <header>
+    <header class="">
         <div id="container-avatar">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.w3schools.com%2Fw3images%2Favatar2.png&f=1&nofb=1" alt="">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.w3schools.com%2Fw3images%2Favatar2.png&f=1&nofb=1" alt="avatar">
         </div>
         <h1>Dylan Tavarès</h1>
         <ul id="social-links">
@@ -30,13 +30,20 @@
                 <li><a href=""><i class="fas fa-at"></i>Contact</a></li>
             </ul>
         </nav>
-        <span>Created by Dylan Tavares with ❤️</span>
+        <span id="thx">Created by Dylan Tavares with ❤️</span>
     </header>
     <div id="main">
         <section>
-            <h2>Développeur Web</h2>
-            <h2>Data Scientist</h2>
-    
+            <h2>
+                Développeur <span
+                  class="typer"
+                  id="some-id"
+                  data-words="Web,I.A"
+                  data-delay="400"
+                  data-colors="#08605F,#177E89,purple">
+                </span>
+                <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id"></span>
+              </h2>
             <h3>A propos</h3>
             <p>Un jeune développeur passionné par les nouvelles technologies.</p>
             
@@ -156,9 +163,13 @@
     
         </section>
     </div>
-    
 
+    <script src="assets/js/app.js"></script>
+    <!-- Auto-Typing for title JS -->
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <!-- FontAwsome CDN -->
     <script src="https://kit.fontawesome.com/62f8a9d523.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
