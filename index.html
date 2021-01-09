@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
-<body class="">
+<body class="col-12">
     
-    <header id="" class="">
+    <header id="" class="col-2">
         <div id="container-avatar">
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.w3schools.com%2Fw3images%2Favatar2.png&f=1&nofb=1" alt="avatar">
         </div>
@@ -33,7 +33,7 @@
         </nav>
         <span id="thx">Created by Dylan Tavares with ❤️</span>
     </header>
-    <div id="main" class="container">
+    <div id="main" class="col-10 offset-1">
         <section>
             <h2 id="home">
                 Développeur <span
@@ -63,13 +63,16 @@
             
             <div id="exp">
                 <h3>Experiences</h3>
-                <ul>
+                <ul id="class-exp">
                     <li>
-                        2020 - Manutentionnaire</br>
+                        <span class="dates">2020</span></br> - Manutentionnaire</br>
                         PrimSelect - Toulouse
                     </li>
-                    <li>2019 - Stage : Praaxis - Montluçon</li>
-                    <li>2018 - Stage : Vendeur et gestion informatique</br>
+                    <li>
+                        <span class="dates">2019</span> - Stage : Praaxis - Montluçon
+                    </li>
+                    <li>
+                        <span class="dates">2018</span> - Stage : Vendeur et gestion informatique</br>
                         Montluçon - Brulerie Bretonie</br>
                         Vente et conseils de thé, café, accessoires. Gestion informatique et
                         création d’une carte de consommation sur photoshop.</br></br>
@@ -80,34 +83,89 @@
                         - Stage : Technicien Réparateur PC/Mobile
                         Montluçon - Easy Repair
                         Réparation, entretien PC. Nettoyage hardware. Diagnostique et
-                        réparation téléphone mobile, matériel informatique et consoles.</li>
-                    <li>2017 - Opérateur régleur Fraisage numérique</br>
-                        Lavault-Saint-Anne - 2MI</li>
-                    <li>2016 - Opérateur producteur Tourange numérique</br>
-                        Montluçon - AMIS</li>
-                    <li>2015 - Stage : Gestion industrielle, usinage 5axes</br>
-                        Montluçon - A.C.C</li>
-                    <li>2014 - Stage : Fraiseur traditionnel et numérique</br>
-                        Montluçon - DAM</li>
-                    <li>2013 - Stage : Fraiseur traditionnel</br>
-                        Saint-Victor - A.M.T.E.K</li>
-                    <li>2012 - Stage : Découverte usinage</br>
-                        Chamblet - Entreprise Barthazon</li>
+                        réparation téléphone mobile, matériel informatique et consoles.
+                    </li>
+                    <li>
+                        <span class="dates">2017</span> - Opérateur régleur Fraisage numérique</br>
+                        Lavault-Saint-Anne - 2MI
+                    </li>
+                    <li>
+                        <span class="dates">2016</span> - Opérateur producteur Tourange numérique</br>
+                        Montluçon - AMIS
+                    </li>
+                    <li>
+                        <span class="dates">2015</span> - Stage : Gestion industrielle, usinage 5axes</br>
+                        Montluçon - A.C.C
+                    </li>
+                    <li>
+                        <span class="dates">2014</span> - Stage : Fraiseur traditionnel et numérique</br>
+                        Montluçon - DAM
+                    </li>
+                    <li>
+                        <span class="dates">2013</span> - Stage : Fraiseur traditionnel</br>
+                        Saint-Victor - A.M.T.E.K
+                    </li>
+                    <li>
+                        <span class="dates">2012</span> - Stage : Découverte usinage</br>
+                        Chamblet - Entreprise Barthazon
+                    </li>
                 </ul>
             </div>
             
     
             <h3>Formations</h3>
-            <ul>
-                <li>2020/2022 </br>
+            <ul id="formation">
+                <li><span class="dates">2020/2022</br></span>
                     Développeur Intelligence Artificielle / Machine Learning</br>
                     Simplon - Toulouse</br>
                 </li>
-                <li>2019</li>
-                <li>2018/2019</li>
-                <li>2014/2016</li>
-                <li>2011/2014</li>
+                <li><span class="dates">2019</span></br>
+                    Titre pro : Développeur Web et Web mobile Montluçon - AFORMAC
+                </li>
+                <li><span class="dates">2018/2019</span> Accompagnement socio-professionnel
+                    Montluçon - Mission Locale</br>
+                    
+                </li>
+                <li><span class="dates">2014/2016</span>BTS : industrialisation des produits mécaniques
+                    Montluçon - Lycée Paul Constans</li>
+                <li><span class="dates">2011/2014</span>Bac Pro : Technicien d’usinage
+                    Montluçon - Lycée Paul Constans</li>
             </ul>
+
+
+            <!-- Affichage du CV version papaier ( pour pouvoir le télécharger )-->
+            <!-- Button trigger modal -->
+            <div class="d-flex justify-content-center m-5">
+                
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="fas fa-download"></i> Téléchargez mon CV <i class="fas fa-download"></i>
+                </button>
+            </div>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">CV version PDF</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="assets/pdf/CV Développeur web Fullstack.pdf" width=100% height=100% type='application/pdf' />
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+                    <input type="button" class="btn btn-warning" value="Voir en plein page" onclick="window.location.href='assets/pdf/CV Développeur web Fullstack.pdf'">
+                    <a class="btn btn-warning" href="assets/pdf/CV Développeur web Fullstack.pdf" download="CV_Tavares_Dylan" >Télécharger</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            
+
+
             <div id="skills">
                     <h3>Dev Skills</h3>
                 <div>
@@ -157,6 +215,14 @@
                     </div>
                 </div>
             </div>
+
+            <h3>Diplômes</h3>
+
+            <ul id="dip-list">
+                <li><span class="dates">2019</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Titre pro Développeur web et web mobile</li>
+                <li><span class="dates">2014</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Bac pro Technicien d'usiange</li>
+                <li><span class="dates">2013</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>BEP</li>
+            </ul>
             
             <div id="contact">
                 <h3>Contact</h3>
@@ -180,6 +246,7 @@
         </section>
     </div>
 
+    <!-- script JS perso -->
     <script src="assets/js/app.js"></script>
     <!-- Auto-Typing for title JS -->
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
