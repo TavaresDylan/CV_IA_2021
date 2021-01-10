@@ -6,6 +6,8 @@
     <title>Tavares Dyan CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/64/000000/code.png/">
+    <!-- Police de caractères -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -15,7 +17,7 @@
     
     <header id="" class="col-2">
         <div id="container-avatar">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.w3schools.com%2Fw3images%2Favatar2.png&f=1&nofb=1" alt="avatar">
+            <img src="assets/img/Photo.jpg" alt="avatar">
         </div>
         <h1>Dylan Tavarès</h1>
         <ul id="social-links">
@@ -50,7 +52,9 @@
                 <p>Un jeune développeur passionné par les nouvelles technologies du web et de la data.</p>
             
                 <div id="desc">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.w3schools.com%2Fw3images%2Favatar2.png&f=1&nofb=1" alt="">
+                    <div id="container-img">
+                        <img id="img-about" src="assets/img/Photo.jpg" alt="Photo Présentation">
+                    </div>
                     <div>
                         <h4>Développeur Web / Etudiant Développeur I.A</h4>
                             <p class="animate__backInLeft text-desc">Bonjour, je suis <span class="highlighted">Dylan Tavarès</span>, jeune développeur web installé dans la ville de Toulouse depuis peu.</p>
@@ -67,9 +71,13 @@
                     <li>
                         <span class="dates">2020</span></br> - Manutentionnaire</br>
                         PrimSelect - Toulouse
+                        <p>A mon arrivée sur Toulouse j'ai rapidement chercher du travail et c'est comme cela que j'ai fait quelques mois de manutention au sein du marché gare de Toulouse</p>
                     </li>
                     <li>
-                        <span class="dates">2019</span> - Stage : Praaxis - Montluçon
+                        <span class="dates">2019</span><strong>- Stage</strong> : Praaxis - Montluçon</br>
+                        <p>site internet : <a href="https://praaxis.fr/">praaxis.fr</a></p>
+                        <p>Dans cette petite startup de 2 personnes j'ai eu pour objectif lors de ce stage la mise en production de nouvelles pages avec le thème <a href="https://www.elegantthemes.com/gallery/divi/">DIVI</a> de Wordpress. En prenant en compte l'aspect SEO de la rédaction de contenu. Pour se faire j'ai utiliser google trends afin d'analyser les tendances de recherche dans le domaine du web.
+                            L'expérience que j'ai pu acquérir lors de cette période de stage </p> 
                     </li>
                     <li>
                         <span class="dates">2018</span> - Stage : Vendeur et gestion informatique</br>
@@ -176,7 +184,7 @@
                             <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F1b%2FR_logo.svg%2F1200px-R_logo.svg.png&f=1&nofb=1" alt="Logo R"><p>R</p></li>
                             <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F01%2FCreated_with_Matplotlib-logo.svg%2F1024px-Created_with_Matplotlib-logo.svg.png&f=1&nofb=1" alt="Logo Matplotlib"><p>Matplotlib</p></li>
                             <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F05%2FScikit_learn_logo_small.svg%2F1200px-Scikit_learn_logo_small.svg.png&f=1&nofb=1" alt="Logo SkLearn"><p>Sci-Kit Learn</p></li>
-                            <li><img class="img-skills" src="" alt=""><p></p></li>
+                            <li><img class="img-skills" src="https://user-images.githubusercontent.com/315810/92161415-9e357100-edfe-11ea-917d-f9e33fd60741.png" alt=""><p>Seaborn</p></li>
                         </ul>
                     </div>
                 </div>
@@ -232,12 +240,20 @@
                         <label for="">Name</label>
                         <input type="text">
                         <label for="">Mail</label>
-                        <input type="text">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="exemple@sas.fr" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <textarea class="p-3" name="" id="" cols="30" rows="10"></textarea>
+
+                        <input class="btn btn-primary m-3" value="Envoyer" type="submit">
                     </div>
-                    <div>
-                        <h4>Lorem</h4>
-                        
+                    <div class="p-3">
+                        <p>Par téléphone :</p>
+                        <a class="btn btn-primary btn-lg m-5" href="tel:0614144256"><i class="fas fa-phone-alt"></i> 06/14/14/42/56</a>
+                        <p>Par courrier :</p>
+                        <p> 7 Chemin du baron </br> 31200 </br>Toulouse</p>
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.4321655035018923%2C43.64607546482182%2C1.435062289237976%2C43.64780865654602&amp;layer=mapnik&amp;marker=43.64694303736717%2C1.433613896369934" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.64694&amp;mlon=1.43361#map=19/43.64694/1.43361">Afficher une carte plus grande</a></small>
                     </div>
                 </div>
             </div>
