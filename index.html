@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tavares Dyan CV</title>
+    <title>Tavares Dyan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/64/000000/code.png/">
     <!-- Police de caractères -->
@@ -21,35 +22,35 @@
         </div>
         <h1>Dylan Tavarès</h1>
         <ul id="social-links">
-            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dylan-tavar%C3%A8s-727b23187/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/TavaresDylan"><i class="fab fa-github-square"></i></a></li>
         </ul>
         <nav class="navbar-expand-sm">
             <ul>
-                <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="#about"><i class="far fa-user"></i>A propos</a></li>
-                <li><a href="#exp"><i class="fas fa-atlas"></i>XP</a></li>
-                <li><a href="#skills"><i class="fas fa-cogs"></i>Skills</a></li>
-                <li><a href="#contact"><i class="fas fa-at"></i>Contact</a></li>
+                <li><a class="link-nav" href="#home"><i class="fas fa-home"></i>Home</a></li>
+                <li><a class="link-nav" href="#about"><i class="far fa-user"></i>A propos</a></li>
+                <li><a class="link-nav" href="#exp"><i class="fas fa-atlas"></i>XP</a></li>
+                <li><a class="link-nav" href="#skills"><i class="fas fa-cogs"></i>Skills</a></li>
+                <li><a class="link-nav" href="#contact"><i class="fas fa-at"></i>Contact</a></li>
             </ul>
         </nav>
         <span id="thx">Created by Dylan Tavares with ❤️</span>
     </header>
-    <div id="main" class="col-10 offset-1">
+    <div id="main" class="col-lg-10 offset-1">
         <section>
             <h2 id="home">
                 Développeur <span
                   class="typer"
                   id="some-id"
-                  data-words="Web,I.A"
-                  data-delay="400"
-                  data-colors="#08605F,#177E89,purple">
+                  data-words="Web,Mobile,I.A"
+                  data-delay="350"
+                  data-colors="#FFC107,#0249ef,purple">
                 </span>
                 <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id"></span>
               </h2>
             <div id="about">
                 <h3>A propos</h3>
-                <p>Un jeune développeur passionné par les nouvelles technologies du web et de la data.</p>
+                <span id="catch">Un jeune développeur passionné par les nouvelles technologies du web et de la data.</span>
             
                 <div id="desc">
                     <div id="container-img">
@@ -69,25 +70,25 @@
                 <h3>Experiences</h3>
                 <ul id="class-exp">
                     <li>
-                        <span class="dates">2020</span></br> - Manutentionnaire</br>
+                        <span class="dates">2020</span> <strong>- Manutentionnaire</strong></br>
                         PrimSelect - Toulouse
                         <p>A mon arrivée sur Toulouse j'ai rapidement chercher du travail et c'est comme cela que j'ai fait quelques mois de manutention au sein du marché gare de Toulouse</p>
                     </li>
                     <li>
-                        <span class="dates">2019</span><strong>- Stage</strong> : Praaxis - Montluçon</br>
-                        <p>site internet : <a href="https://praaxis.fr/">praaxis.fr</a></p>
+                        <span class="dates">2019</span><strong>- Stage : Développeur Wordpress</strong> Praaxis - Montluçon</br>
+                        <p><i class="fas fa-globe"></i> Site internet : <a href="https://praaxis.fr/">praaxis.fr <i class="fas fa-external-link-alt"></i></a></p>
                         <p>Dans cette petite startup de 2 personnes j'ai eu pour objectif lors de ce stage la mise en production de nouvelles pages avec le thème <a href="https://www.elegantthemes.com/gallery/divi/">DIVI</a> de Wordpress. En prenant en compte l'aspect SEO de la rédaction de contenu. Pour se faire j'ai utiliser google trends afin d'analyser les tendances de recherche dans le domaine du web.
                             L'expérience que j'ai pu acquérir lors de cette période de stage </p> 
                     </li>
                     <li>
-                        <span class="dates">2018</span> - Stage : Vendeur et gestion informatique</br>
+                        <span class="dates">2018</span><strong>- Stage : Vendeur et gestion informatique</strong></br>
                         Montluçon - Brulerie Bretonie</br>
-                        Vente et conseils de thé, café, accessoires. Gestion informatique et
-                        création d’une carte de consommation sur photoshop.</br></br>
+                        <p>Vente et conseils de thé, café, accessoires. Gestion informatique et
+                        création d’une carte de consommation sur photoshop.</p>
                         - Stage : Technicien monteur PC
                         Montluçon - M.D.I
-                        Réparation, entretien et montage PC sur mesure. Installation de
-                        systèmes d’exploitations. Nettoyage hardware/software.</br></br>
+                        <p>Réparation, entretien et montage PC sur mesure. Installation de
+                        systèmes d’exploitations. Nettoyage hardware/software.</p>
                         - Stage : Technicien Réparateur PC/Mobile
                         Montluçon - Easy Repair
                         Réparation, entretien PC. Nettoyage hardware. Diagnostique et
@@ -107,15 +108,15 @@
                     </li>
                     <li>
                         <span class="dates">2014</span> - Stage : Fraiseur traditionnel et numérique</br>
-                        Montluçon - DAM
+                        <i class="fas fa-map-marked-alt"></i>Montluçon - DAM
                     </li>
                     <li>
                         <span class="dates">2013</span> - Stage : Fraiseur traditionnel</br>
-                        Saint-Victor - A.M.T.E.K
+                        <i class="fas fa-map-marked-alt"></i>Saint-Victor - A.M.T.E.K
                     </li>
                     <li>
                         <span class="dates">2012</span> - Stage : Découverte usinage</br>
-                        Chamblet - Entreprise Barthazon
+                        <i class="fas fa-map-marked-alt"></i>Chamblet - Entreprise Barthazon
                     </li>
                 </ul>
             </div>
@@ -145,7 +146,7 @@
             <!-- Button trigger modal -->
             <div class="d-flex justify-content-center m-5">
                 
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <i class="fas fa-download"></i> Téléchargez mon CV <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -165,7 +166,7 @@
                     <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
                     <input type="button" class="btn btn-warning" value="Voir en plein page" onclick="window.location.href='assets/pdf/CV Développeur web Fullstack.pdf'">
-                    <a class="btn btn-warning" href="assets/pdf/CV Développeur web Fullstack.pdf" download="CV_Tavares_Dylan" >Télécharger</a>
+                    <a class="btn btn-warning" href="assets/pdf/CV Développeur web Fullstack.pdf" download="CV_Tavares_Dylan" ><i class="fas fa-download"></i>Télécharger</a>
                     </div>
                 </div>
                 </div>
@@ -228,17 +229,17 @@
 
             <ul id="dip-list">
                 <li><span class="dates">2019</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Titre pro Développeur web et web mobile</li>
-                <li><span class="dates">2014</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Bac pro Technicien d'usiange</li>
+                <li><span class="dates">2014</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Bac pro Technicien d'usinage</li>
                 <li><span class="dates">2013</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>BEP</li>
             </ul>
-            
+
             <div id="contact">
                 <h3>Contact</h3>
                 <div id="contact-container">
                     <div>
                         <h4>Envoyez-moi un message</h4>
                         <label for="">Name</label>
-                        <input type="text">
+                        <input class="form-control" type="text">
                         <label for="">Mail</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">@</span>
@@ -246,14 +247,14 @@
                         </div>
                         <textarea class="p-3" name="" id="" cols="30" rows="10"></textarea>
 
-                        <input class="btn btn-primary m-3" value="Envoyer" type="submit">
+                        <input class="btn btn-warning m-3" value="Envoyer" type="submit">
                     </div>
-                    <div class="p-3">
-                        <p>Par téléphone :</p>
-                        <a class="btn btn-primary btn-lg m-5" href="tel:0614144256"><i class="fas fa-phone-alt"></i> 06/14/14/42/56</a>
-                        <p>Par courrier :</p>
-                        <p> 7 Chemin du baron </br> 31200 </br>Toulouse</p>
-                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.4321655035018923%2C43.64607546482182%2C1.435062289237976%2C43.64780865654602&amp;layer=mapnik&amp;marker=43.64694303736717%2C1.433613896369934" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.64694&amp;mlon=1.43361#map=19/43.64694/1.43361">Afficher une carte plus grande</a></small>
+                    <div class="p-3" id="tel-postal">
+                        <p><span>Par téléphone</span></p>
+                        <a class="btn btn-warning btn-lg m-5" href="tel:0614144256"><i class="fas fa-phone-alt"></i> 06/14/14/42/56</a>
+                        <p><span>Par courrier</span></p>
+                        <p class="text-center"> 7 Chemin du baron </br> 31200 </br>Toulouse</p>
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.4321655035018923%2C43.64607546482182%2C1.435062289237976%2C43.64780865654602&amp;layer=mapnik&amp;marker=43.64694303736717%2C1.433613896369934" style="border: 1px solid black"></iframe>
                     </div>
                 </div>
             </div>
