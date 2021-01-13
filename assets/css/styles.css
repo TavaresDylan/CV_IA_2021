@@ -19,7 +19,7 @@ a{
 /**
 Menu
 **/
-header{
+#header-xl{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -86,15 +86,15 @@ h4{
 /**
 Menu de nav
 **/
-nav{
+#header-xl>nav{
     margin-top: 32px;
     width: 100%;
 }
-nav > ul{
+#header-xl>nav > ul{
     margin-left: 30px;
     padding: 0;
 }
-nav > ul >li{
+#header-xl>nav > ul >li{
     margin: 24px 0 0 0;
     padding: 0;
 }
@@ -109,7 +109,7 @@ nav > ul >li{
     color: #FFC107/*rgb(44, 185, 44)*/;
     transition: 0.2s ease-in-out;
 }
-nav>ul>li>a>i{
+#header-xl>nav>ul>li>a>i{
     margin-right: 12px;
 }
 #social-links{
@@ -161,6 +161,8 @@ section{
 
 #contact-container{
     background:#349250;
+    border-radius: 2px;
+    box-shadow: 0 0 6px #000000;
     padding: 34px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,7 +173,6 @@ section{
     flex-direction: column;
 }
 #second-container{
-    width: 80%;
     overflow: hidden;
 }
 .img-skills{
@@ -219,6 +220,7 @@ ABOUT
 .dates{
     background-color: #349250;
     font-size: 24px;
+    border-radius: 2px;
     font-family: 'Oswald';
     padding: 4px;
     text-shadow: 0 0 2px#000000;
@@ -264,52 +266,4 @@ Modal du pdf
 }
 iframe{
     margin: auto;
-}
-
-@media screen and (max-width: 1580px){
-    header{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 960px){
-    #img-about{
-        width: 230px;
-        height: 230px;
-    }
-}
-@media screen and (max-width: 992px){
-    #contact-container{
-        display: flex;
-        flex-direction: column;
-    }
-    #dip-list{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #dip-list>li{
-        width: 40vw;
-    }
-}
-@media screen and (max-width: 768px){
-    #desc{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #img-about{
-        margin-bottom: 24px;
-    }
-    #dip-list>li{
-        width: 50vw;
-    }
-}
-
-@media screen and (max-width: 524px){
-    #dip-list>li{
-        width: 60vw;
-    }
 }
