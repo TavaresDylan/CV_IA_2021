@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tavares Dyan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
 
@@ -13,44 +15,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body class="col-12">
+
+    <button id="page-up" class="btn btn-outline-dark" onclick="window.location.href='#main'"><i class="fas fa-arrow-circle-up"></i></button>
+
     <header id="header-mobile">
         <nav class="navbar navbar-dark bg-success" aria-label="Sixth navbar example">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Dylan Tavares</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        
-              <div class="collapse navbar-collapse" id="navbarsExample06">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                    <li><a class="link-nav" href="#home"><i class="fas fa-home"></i>Home</a></li>
-                    <li><a class="link-nav" href="#about"><i class="far fa-user"></i>A propos</a></li>
-                    <li><a class="link-nav" href="#exp"><i class="fas fa-atlas"></i>XP</a></li>
-                    <li><a class="link-nav" href="#skills"><i class="fas fa-cogs"></i>Skills</a></li>
-                    <li><a class="link-nav" href="#contact"><i class="fas fa-at"></i>Contact</a></li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">Dylan Tavares</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample06">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li><a class="link-nav" href="#home"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a class="link-nav" href="#about"><i class="far fa-user"></i>A propos</a></li>
+                        <li><a class="link-nav" href="#exp"><i class="fas fa-atlas"></i>Experiences</a></li>
+                        <li><a class="link-nav" href="#title-formation"><i class="fas fa-certificate"></i>Formations</a></li>
+                        <li><a class="link-nav" href="#skills"><i class="fas fa-cogs"></i>Skills</a></li>
+                        <li><a class="link-nav" href="#contact"><i class="fas fa-at"></i>Contact</a></li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <header id="header-xl" class="col-xxl-2">
-        
+
         <div id="container-avatar">
             <img src="assets/img/Photo.jpg" alt="avatar">
         </div>
         <h1>Dylan Tavarès</h1>
         <ul id="social-links">
-            <li><a href="https://www.linkedin.com/in/dylan-tavar%C3%A8s-727b23187/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dylan-tavar%C3%A8s-727b23187/"><i class="fab fa-linkedin"></i></a>
+            </li>
             <li><a href="https://github.com/TavaresDylan"><i class="fab fa-github-square"></i></a></li>
         </ul>
         <nav class="navbar-expand-sm">
             <ul>
                 <li><a class="link-nav" href="#home"><i class="fas fa-home"></i>Home</a></li>
                 <li><a class="link-nav" href="#about"><i class="far fa-user"></i>A propos</a></li>
-                <li><a class="link-nav" href="#exp"><i class="fas fa-atlas"></i>XP</a></li>
+                <li><a class="link-nav" href="#exp"><i class="fas fa-atlas"></i>Experiences</a></li>
+                <li><a class="link-nav" href="#title-formation"><i class="fas fa-certificate"></i>Formations</a></li>
                 <li><a class="link-nav" href="#skills"><i class="fas fa-cogs"></i>Skills</a></li>
                 <li><a class="link-nav" href="#contact"><i class="fas fa-at"></i>Contact</a></li>
             </ul>
@@ -60,57 +71,70 @@
     <div id="main" class="container">
         <section class="col-xxl-11 offset-xxl-2">
             <h2 id="home">
-                Développeur <span
-                  class="typer"
-                  id="some-id"
-                  data-words="Web,Mobile,I.A"
-                  data-delay="350"
-                  data-colors="#FFC107,#0249ef,purple">
+                Développeur <span class="typer" id="some-id" data-words="Web,Mobile,I.A" data-delay="350"
+                    data-colors="#FFC107,#0249ef,purple">
                 </span>
-                <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="some-id"></span>
-              </h2>
+                <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|"
+                    data-owner="some-id"></span>
+            </h2>
             <div id="about">
                 <h3>A propos</h3>
-                <span id="catch">Un jeune développeur passionné par les nouvelles technologies du web et de la data.</span>
-            
+                <span id="catch">Un jeune développeur passionné par les nouvelles technologies du web et de la
+                    data.</span>
+
                 <div id="desc">
                     <div id="container-img">
                         <img id="img-about" src="assets/img/Photo.jpg" alt="Photo Présentation">
                     </div>
                     <div>
                         <h4>Développeur Web / Etudiant Développeur I.A</h4>
-                            <p class="animate__backInLeft text-desc">Bonjour, je suis <span class="highlighted">Dylan Tavarès</span>, jeune développeur web installé dans la ville de Toulouse depuis peu.</p>
-                            <p class="animate__backInRight text-desc">Mon parcours est assez atypique, ma formation de base est la mécanique de précision, mais c'est après 1 an à travailler dans les usines que j'ai choisi de faire de <span class="highlighted">ma passion mon nouveau métier</span>.</p>
-                            <p class="text-desc">Début d'année <span class="highlighted">2019</span> je commençais une formation de Développeur web et web mobile pour obtenir le dîplome équivanent BTS/BAC+2 en fin d'année.</p>
-                            <p class="text-desc">Aujourd'hui en <span class="highlighted">2020</span> et après avoir travailler sur mon site web personnel je suis en <strong>recherche d'un poste de développeur web débutant</strong>.</p>
+                        <p class="animate__backInLeft text-desc">Bonjour, je suis <span class="highlighted">Dylan
+                                Tavarès</span>, jeune développeur web installé dans la ville de Toulouse depuis peu.</p>
+                        <p class="animate__backInRight text-desc">Mon parcours est assez atypique, ma formation de base
+                            est la mécanique de précision, mais c'est après 1 an à travailler dans les usines que j'ai
+                            choisi de faire de <span class="highlighted">ma passion mon nouveau métier</span>.</p>
+                        <p class="text-desc">Début d'année <span class="highlighted">2019</span> je commençais une
+                            formation de Développeur web et web mobile pour obtenir le dîplome équivanent BTS/BAC+2 en
+                            fin d'année.</p>
+                        <p class="text-desc">Aujourd'hui en <span class="highlighted">2020</span> et après avoir
+                            travailler sur mon site web personnel je suis en <strong>recherche d'un poste de développeur
+                                web débutant</strong>.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div id="exp">
                 <h3>Experiences</h3>
                 <ul id="class-exp">
                     <li>
                         <span class="dates">2020</span> <strong>- Manutentionnaire</strong></br>
                         PrimSelect - Toulouse
-                        <p>A mon arrivée sur Toulouse j'ai rapidement chercher du travail et c'est comme cela que j'ai fait quelques mois de manutention au sein du marché gare de Toulouse</p>
+                        <p>A mon arrivée sur Toulouse j'ai rapidement chercher du travail et c'est comme cela que j'ai
+                            fait quelques mois de manutention au sein du marché gare de Toulouse</p>
                     </li>
                     <li>
-                        <span class="dates">2019</span><strong>- Stage : Développeur Wordpress</strong> Praaxis - Montluçon</br>
-                        <p><i class="fas fa-globe"></i> Site internet : <a href="https://praaxis.fr/">praaxis.fr <i class="fas fa-external-link-alt"></i></a></p>
-                        <p>Dans cette petite startup de 2 personnes j'ai eu pour objectif lors de ce stage la mise en production de nouvelles pages avec le thème <a href="https://www.elegantthemes.com/gallery/divi/">DIVI</a> de Wordpress. En prenant en compte l'aspect SEO de la rédaction de contenu. Pour se faire j'ai utiliser google trends afin d'analyser les tendances de recherche dans le domaine du web.
-                            L'expérience que j'ai pu acquérir lors de cette période de stage </p> 
+                        <span class="dates">2019</span><strong>- Stage : Développeur Wordpress</strong> Praaxis -
+                        Montluçon</br>
+                        <p><i class="fas fa-globe"></i> Site internet : <a href="https://praaxis.fr/">praaxis.fr <i
+                                    class="fas fa-external-link-alt"></i></a></p>
+                        <p>Dans cette petite startup de 2 personnes j'ai eu pour objectif lors de ce stage la mise en
+                            production de nouvelles pages avec le thème <a
+                                href="https://www.elegantthemes.com/gallery/divi/">DIVI</a> de Wordpress. En prenant en
+                            compte l'aspect SEO de la rédaction de contenu. Pour se faire j'ai utiliser google trends
+                            afin d'analyser les tendances de recherche dans le domaine du web.
+                            L'expérience que j'ai pu acquérir lors de cette période de stage </p>
                     </li>
                     <li>
                         <span class="dates">2018</span><strong>- Stage : Vendeur et gestion informatique</strong></br>
                         Montluçon - Brulerie Bretonie</br>
                         <p>Vente et conseils de thé, café, accessoires. Gestion informatique et
-                        création d’une carte de consommation sur photoshop.</p>
+                            création d’une carte de consommation sur photoshop.</p>
                         <p><strong>- Stage : Technicien monteur PC</strong></p>
                         <p>Montluçon - M.D.I</p>
-                        <p><i class="fas fa-globe"></i> Site internet : <a href="http://mdi03.com/">mdi03.com <i class="fas fa-external-link-alt"></i></a></p>
+                        <p><i class="fas fa-globe"></i> Site internet : <a href="http://mdi03.com/">mdi03.com <i
+                                    class="fas fa-external-link-alt"></i></a></p>
                         <p>Réparation, entretien et montage PC sur mesure. Installation de
-                        systèmes d’exploitations. Nettoyage hardware/software.
+                            systèmes d’exploitations. Nettoyage hardware/software.
                         </p>
                         - Stage : Technicien Réparateur PC/Mobile
                         Montluçon - Easy Repair
@@ -118,12 +142,17 @@
                         réparation téléphone mobile, matériel informatique et consoles.
                     </li>
                     <li>
-                        <span class="dates">2017</span> - Opérateur régleur Fraisage numérique</br>
+                        <span class="dates">2017</span><strong>- Opérateur régleur Fraisage numérique</strong> </br>
                         Lavault-Saint-Anne - 2MI
+                        <p><i class="fas fa-globe"></i> Site internet : <a href="http://www.2migroup.eu/fr/">2migroup.eu <i
+                            class="fas fa-external-link-alt"></i></a></p>
                     </li>
                     <li>
                         <span class="dates">2016</span> - Opérateur producteur Tourange numérique</br>
                         Montluçon - AMIS
+                        <p><i class="fas fa-globe"></i> Site internet : <a href="https://www.sifcor.fr/groupe-sifcor-31">sifcor.fr <i
+                            class="fas fa-external-link-alt"></i></a></p>
+                        
                     </li>
                     <li>
                         <span class="dates">2015</span> - Stage : Gestion industrielle, usinage 5axes</br>
@@ -143,20 +172,21 @@
                     </li>
                 </ul>
             </div>
-            
-    
-            <h3>Formations</h3>
+
+
+            <h3 id="title-formation">Formations</h3>
             <ul id="formation">
                 <li><span class="dates">2020/2022</br></span>
                     Développeur Intelligence Artificielle / Machine Learning</br>
                     Simplon - Toulouse</br>
+                    <p><i class="fas fa-globe"></i> Site internet : <a href="https://simplon.co">simplon.co <i
+                        class="fas fa-external-link-alt"></i></a></p>
                 </li>
                 <li><span class="dates">2019</span></br>
                     Titre pro : Développeur Web et Web mobile Montluçon - AFORMAC
                 </li>
                 <li><span class="dates">2018/2019</span> Accompagnement socio-professionnel
                     Montluçon - Mission Locale</br>
-                    
                 </li>
                 <li><span class="dates">2014/2016</span>BTS : industrialisation des produits mécaniques
                     Montluçon - Lycée Paul Constans</li>
@@ -168,47 +198,71 @@
             <!-- Affichage du CV version papaier ( pour pouvoir le télécharger )-->
             <!-- Button trigger modal -->
             <div class="d-flex justify-content-center m-5">
-                
+
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <i class="fas fa-download"></i> Téléchargez mon CV <i class="fas fa-download"></i>
                 </button>
             </div>
-            
-            
+
+
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">CV version PDF</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">CV version PDF</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="assets/pdf/CV Développeur web Fullstack.pdf" width=100% height=100%
+                                type='application/pdf' />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+                            <input type="button" class="btn btn-warning" value="Voir en plein page"
+                                onclick="window.location.href='assets/pdf/CV Développeur web Fullstack.pdf'">
+                            <a class="btn btn-warning" href="assets/pdf/CV Développeur web Fullstack.pdf"
+                                download="CV_Tavares_Dylan"><i class="fas fa-download"></i>Télécharger</a>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <embed src="assets/pdf/CV Développeur web Fullstack.pdf" width=100% height=100% type='application/pdf' />
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
-                    <input type="button" class="btn btn-warning" value="Voir en plein page" onclick="window.location.href='assets/pdf/CV Développeur web Fullstack.pdf'">
-                    <a class="btn btn-warning" href="assets/pdf/CV Développeur web Fullstack.pdf" download="CV_Tavares_Dylan" ><i class="fas fa-download"></i>Télécharger</a>
-                    </div>
-                </div>
                 </div>
             </div>
 
-            
+
 
 
             <div id="skills">
-                    <h3>Dev Skills</h3>
+                <h3>Dev Skills</h3>
                 <div>
                     <h4>I.A</h4>
                     <div class="skills-box">
                         <ul class="skill-list">
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0a%2FPython.svg%2F768px-Python.svg.png&f=1&nofb=1" alt="Logo Pyhton"><p>Pyhton</p></li>
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F1b%2FR_logo.svg%2F1200px-R_logo.svg.png&f=1&nofb=1" alt="Logo R"><p>R</p></li>
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F01%2FCreated_with_Matplotlib-logo.svg%2F1024px-Created_with_Matplotlib-logo.svg.png&f=1&nofb=1" alt="Logo Matplotlib"><p>Matplotlib</p></li>
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F05%2FScikit_learn_logo_small.svg%2F1200px-Scikit_learn_logo_small.svg.png&f=1&nofb=1" alt="Logo SkLearn"><p>Sci-Kit Learn</p></li>
-                            <li><img class="img-skills" src="https://user-images.githubusercontent.com/315810/92161415-9e357100-edfe-11ea-917d-f9e33fd60741.png" alt=""><p>Seaborn</p></li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0a%2FPython.svg%2F768px-Python.svg.png&f=1&nofb=1"
+                                    alt="Logo Pyhton">
+                                <p>Pyhton</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F1b%2FR_logo.svg%2F1200px-R_logo.svg.png&f=1&nofb=1"
+                                    alt="Logo R">
+                                <p>R</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F01%2FCreated_with_Matplotlib-logo.svg%2F1024px-Created_with_Matplotlib-logo.svg.png&f=1&nofb=1"
+                                    alt="Logo Matplotlib">
+                                <p>Matplotlib</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F05%2FScikit_learn_logo_small.svg%2F1200px-Scikit_learn_logo_small.svg.png&f=1&nofb=1"
+                                    alt="Logo SkLearn">
+                                <p>Sci-Kit Learn</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://user-images.githubusercontent.com/315810/92161415-9e357100-edfe-11ea-917d-f9e33fd60741.png"
+                                    alt="">
+                                <p>Seaborn</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -218,31 +272,81 @@
                     <div class="skills-box">
                         <h5 class="skill-box-title">Front-end</h5>
                         <ul class="skill-list">
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2017%2F07%2FHTML5_badge.png&f=1&nofb=1" alt="Logo Html5"><p>HTML5</p></li>
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.smith-consulting.com%2Fportals%2F0%2FImages%2FDNN-Store%2Fcss.png&f=1&nofb=1" alt="Logo Css3"><p>CSS3</p></li>
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupgrade-hub.com%2Fimages%2Flogo-images%2Fjavascript_logo.png&f=1&nofb=1" alt="Logo JavaScript"><p>JavaScript</p></li>
-                            <li><img class="img-skills" src="https://www.ambient-it.net/wp-content/uploads/2016/04/bootstrap-logo-175.png" alt="Logo Bootstrap4"><p>Bootstrap4</p></li>
-                            <li><img class="img-skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png" alt="Logo Sass"><p>Sass</p></li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2017%2F07%2FHTML5_badge.png&f=1&nofb=1"
+                                    alt="Logo Html5">
+                                <p>HTML5</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.smith-consulting.com%2Fportals%2F0%2FImages%2FDNN-Store%2Fcss.png&f=1&nofb=1"
+                                    alt="Logo Css3">
+                                <p>CSS3</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupgrade-hub.com%2Fimages%2Flogo-images%2Fjavascript_logo.png&f=1&nofb=1"
+                                    alt="Logo JavaScript">
+                                <p>JavaScript</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://www.ambient-it.net/wp-content/uploads/2016/04/bootstrap-logo-175.png"
+                                    alt="Logo Bootstrap4">
+                                <p>Bootstrap4</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+                                    alt="Logo Sass">
+                                <p>Sass</p>
+                            </li>
                         </ul>
                     </div>
                     <!-- Boite des compétences back-end -->
                     <div class="skills-box">
                         <h5 class="skill-box-title">Back-end</h5>
                         <ul class="skill-list">
-                            <li><img class="img-skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/2000px-Webysther_20160423_-_Elephpant.svg.png" alt="Php logo"><p>PHP 7.3</p></li>
-                            <li><img class="img-skills" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fmysql%2Fmysql_PNG23.png&f=1&nofb=1" alt="MySql logo"><p>MySQL</p></li>
-                            <li><img class="img-skills" src="https://framalibre.org/sites/default/files/leslogos/phpmyadmin.jpg" alt="PhpMyAdmin logo"><p>PhpMyAdmin</p></li>
-                            <li><img class="img-skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/GNOME_Terminal_icon_2019.svg/1200px-GNOME_Terminal_icon_2019.svg.png" alt="Terminal logo"><p>Terminal / Bash</p></li>
-                            <li><img class="img-skills" src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" alt="Docker logo"><p>Docker</p></li>
+                            <li><img class="img-skills"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/2000px-Webysther_20160423_-_Elephpant.svg.png"
+                                    alt="Php logo">
+                                <p>PHP 7.3</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fmysql%2Fmysql_PNG23.png&f=1&nofb=1"
+                                    alt="MySql logo">
+                                <p>MySQL</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://framalibre.org/sites/default/files/leslogos/phpmyadmin.jpg"
+                                    alt="PhpMyAdmin logo">
+                                <p>PhpMyAdmin</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/GNOME_Terminal_icon_2019.svg/1200px-GNOME_Terminal_icon_2019.svg.png"
+                                    alt="Terminal logo">
+                                <p>Terminal / Bash</p>
+                            </li>
+                            <li><img class="img-skills"
+                                    src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png"
+                                    alt="Docker logo">
+                                <p>Docker</p>
+                            </li>
                         </ul>
                     </div>
                     <!-- Boite des compétences systèmes -->
                     <div class="skills-box">
                         <h5 class="skill-box-title">Systèmes</h5>
                         <ul class="skill-list">
-                            <li><img class="img-skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Windows_logo_-_2012_derivative.svg/1024px-Windows_logo_-_2012_derivative.svg.png" alt="Windows logo"><p>Windows</p></li>
-                            <li><img class="img-skills" src="https://img.icons8.com/color/452/mac-logo.png" alt="Mac logo"><p>OsX</p></li>
-                            <li><img class="img-skills" src="https://pngimg.com/uploads/linux/linux_PNG1.png" alt="Linux logo"><p>Linux</p></li>
+                            <li><img class="img-skills"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Windows_logo_-_2012_derivative.svg/1024px-Windows_logo_-_2012_derivative.svg.png"
+                                    alt="Windows logo">
+                                <p>Windows</p>
+                            </li>
+                            <li><img class="img-skills" src="https://img.icons8.com/color/452/mac-logo.png"
+                                    alt="Mac logo">
+                                <p>OsX</p>
+                            </li>
+                            <li><img class="img-skills" src="https://pngimg.com/uploads/linux/linux_PNG1.png"
+                                    alt="Linux logo">
+                                <p>Linux</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -251,9 +355,17 @@
             <h3>Diplômes</h3>
 
             <ul id="dip-list">
-                <li><span class="dates">2019</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Titre pro Développeur web et web mobile</li>
-                <li><span class="dates">2014</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>Bac pro Technicien d'usinage</li>
-                <li><span class="dates">2013</span><div><img src="https://img.icons8.com/color/48/000000/motarboard.png"/></div>BEP</li>
+                <li><span class="dates">2019</span>
+                    <div><i class="fas fa-graduation-cap dip-icon"></i></div>Titre pro Développeur
+                    web et web mobile
+                </li>
+                <li><span class="dates">2014</span>
+                    <div><i class="fas fa-graduation-cap dip-icon"></i></div>Bac pro Technicien
+                    d'usinage
+                </li>
+                <li><span class="dates">2013</span>
+                    <div><i class="fas fa-graduation-cap dip-icon"></i></div>BEP
+                </li>
             </ul>
 
             <div id="contact">
@@ -262,27 +374,31 @@
                     <div>
                         <h4>Envoyez-moi un message</h4>
                         <label for="">Name</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control mb-2" type="text">
                         <label for="">Mail</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">@</span>
-                            <input type="text" class="form-control" placeholder="exemple@sas.fr" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="exemple@sas.fr" aria-label="Username"
+                                aria-describedby="basic-addon1">
                         </div>
-                        <textarea class="p-3" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="p-3 form-control" name="" id="" cols="30" rows="20"></textarea>
 
                         <input class="btn btn-warning m-3" value="Envoyer" type="submit">
                     </div>
                     <div class="p-3" id="tel-postal">
                         <p><span>Par téléphone</span></p>
-                        <a class="btn btn-warning btn-lg m-5" href="tel:0614144256"><i class="fas fa-phone-alt"></i> 06/14/14/42/56</a>
+                        <a class="btn btn-warning btn-lg m-5" href="tel:0614144256"><i class="fas fa-phone-alt"></i>
+                            06/14/14/42/56</a>
                         <p><span>Par courrier</span></p>
                         <p class="text-center"> 7 Chemin du baron </br> 31200 </br>Toulouse</p>
-                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.4321655035018923%2C43.64607546482182%2C1.435062289237976%2C43.64780865654602&amp;layer=mapnik&amp;marker=43.64694303736717%2C1.433613896369934" style="border: 1px solid black"></iframe>
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=1.4321655035018923%2C43.64607546482182%2C1.435062289237976%2C43.64780865654602&amp;layer=mapnik&amp;marker=43.64694303736717%2C1.433613896369934"
+                            style="border: 1px solid black"></iframe>
                     </div>
                 </div>
             </div>
-            
-    
+
+
         </section>
     </div>
 
@@ -293,6 +409,9 @@
     <!-- FontAwsome CDN -->
     <script src="https://kit.fontawesome.com/62f8a9d523.js" crossorigin="anonymous"></script>
     <!-- Bootstrap5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

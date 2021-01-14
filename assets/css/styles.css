@@ -69,6 +69,8 @@ h3:after{
     background:#349250;
 }
 h4{
+    border-radius: 2px;
+    text-shadow:0 0 2px#000000;
     display: flex;
     background:#349250;
     padding: 4px;
@@ -204,19 +206,33 @@ ABOUT
 #desc>div{
     margin: 0 24px 0 24px;
 }
-
+/**
+Skills
+**/
+.skills-box{
+    margin: 70px 0;
+}
+.skill-list{
+    margin:0;
+}
 .skill-list>li{
-    margin: 12px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.skill-list>li>p{
+    margin: 0;
 }
 
 #exp>ul>li{
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+/**
+Experience
+**/
 .dates{
     background-color: #349250;
     font-size: 24px;
@@ -236,21 +252,24 @@ ABOUT
     flex-direction: column;
 }
 
-
 /**
 Modal du pdf
 **/
-
 .modal-body{
     height:  80vh; 
 }
 
+/**
+Diplomes
+**/
 #dip-list{
+    text-shadow: 0 0 2px black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
 }
 #dip-list>li{
+    box-shadow: 0 0 2px black;
     margin:24px;
     padding: 18px;
     border-radius:8px;
@@ -259,6 +278,10 @@ Modal du pdf
     align-items: center;
     background: #349250;
 }
+.dip-icon{
+    margin-bottom: 12px;
+    font-size: 64px;
+}
 #tel-postal>p>span{
     display: flex;
     justify-content: center;
@@ -266,4 +289,16 @@ Modal du pdf
 }
 iframe{
     margin: auto;
+}
+
+#page-up{
+    position: fixed;
+    bottom: 24px;
+    right: 15px;
+    z-index: 10;
+    width: 62px;
+    height: 62px;
+}
+#page-up>i{
+    font-size: 32px;
 }
