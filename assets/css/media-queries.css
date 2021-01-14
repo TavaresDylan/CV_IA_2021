@@ -75,5 +75,8 @@
     #dip-list>li{
         width: 60vw;
     }
+    iframe{
+        display: none;
+    }
 }
 
