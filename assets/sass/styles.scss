@@ -1,20 +1,21 @@
-/**
-Général
-**/
+@import 'colors';
+//RESET
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/**
+Général
+**/
 body{
+    border: 2px solid #ff00d4;
     display: flex;
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
+    width: 100vw;
+    ul{
+        list-style: none;
+    }
 }
 /**
 Titres
@@ -56,6 +57,124 @@ h4{
     margin-bottom: 22px;
     box-shadow: 0 3px 3px #0000005e;
 }
+/**
+Header Side
+**/
+#header-xl{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #349250;
+    box-shadow: 2px 0px 3px #0000009f;
+    position: fixed;
+    max-width: 20%;
+    min-width: 336px;
+    height: 100vh;
+    /**
+    Avatar
+    **/
+    #container-avatar{
+        margin-top: 15px;
+        img{
+            border: 6px solid rgb(26, 77, 43);
+            border-radius: 100%;
+            width: 120px;
+            height: 120px;
+        }
+    }
+    /**
+    Social links
+    **/
+    #social-links{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 4px;
+            transition: all 0.3s ease-in-out;
+            a{
+                background: rgb(26, 77, 43);
+                border-radius: 100%;
+                width: 42px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: white;
+                    display: flex;
+                    font-size: 28px;
+                }
+            }
+            a:hover{
+                border-radius: 100%;
+                width: 42px;
+                height: 42px;
+                background : #FFC107;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    /**
+    Nav
+    **/
+    nav{
+        margin-top: 32px;
+        width: 100%;
+        ul{
+            margin-left: 30px;
+            padding: 0;
+            li{
+                margin: 24px 0 0 0;
+                padding: 0;
+                .link-nav{
+                    margin-left: 72px;
+                    font-size: 22px;
+                    color: white;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    i{
+                        margin-right: 12px;
+                    }
+                }
+                .link-nav:hover{
+                    color: #FFC107;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+    #thx{
+        font-size: 12px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+    }
+}
+#main{
+    border: 2px solid blue;
+    margin-left: 336px;
+    section{
+        border: 2px solid yellow;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
+#header-mobile{
+    display: none;
+}
+
+.fab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
 #catch{
     display: flex;
     justify-content: center;
@@ -63,110 +182,6 @@ h4{
     color: black;
     font-family: 'Oswald', sans-serif;
     font-size: 32px;
-}
-/**
-Header Side
-**/
-#header-xl{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: #349250;
-    box-shadow: 2px 0px 3px #0000009f;
-    position: fixed;
-    width: 20%;
-    min-width: 336px;
-    height: 100vh;
-}
-#container-avatar{
-    margin-top: 15px;
-}
-#container-avatar > img{
-    border: 6px solid rgb(26, 77, 43);
-    border-radius: 100%;
-    width: 120px;
-    height: 120px;
-}
-/**
-Nav
-**/
-#header-xl>nav{
-    margin-top: 32px;
-    width: 100%;
-}
-#header-xl>nav > ul{
-    margin-left: 30px;
-    padding: 0;
-}
-#header-xl>nav > ul >li{
-    margin: 24px 0 0 0;
-    padding: 0;
-}
-.link-nav{
-    margin-left: 72px;
-    font-size: 22px;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.link-nav:hover{
-    color: #FFC107;
-    transition: 0.2s ease-in-out;
-}
-#header-xl>nav>ul>li>a>i{
-    margin-right: 12px;
-}
-#social-links{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-#social-links > li >a {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 100%;
-    background: rgb(26, 77, 43);
-    margin: 4px;
-    padding: 12px;
-    transition: all 0.3s ease-in-out;
-}
-#social-links :hover{
-    background : #FFC107;
-    transition: all 0.3s ease-in-out;
-}
-#social-links>li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 100%;
-    background: rgb(26, 77, 43);
-    margin: 4px;
-    padding: 12px;
-    transition: all 0.3s ease-in-out;
-}
-#thx{
-    font-size: 12px;
-    color: white;
-    position: absolute;
-    bottom: 0;
-}
-.fab{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-}
-section{
-    margin-top: 3%;
-    margin-bottom: 3%;
 }
 #contact-container{
     background:#349250;
@@ -192,9 +207,7 @@ section{
     display: flex;
     justify-content: space-around;
 }
-#main{
-    margin-left:21%;
-}
+
 /**
 ABOUT
 **/
@@ -238,7 +251,6 @@ Skills
     margin-top: 16px;
     margin-bottom: 16px;
 }
-
 /**
 Experience
 **/
@@ -261,14 +273,12 @@ Experience
     display: flex;
     flex-direction: column;
 }
-
 /**
 Modal du pdf
 **/
 .modal-body{
     height:  80vh; 
 }
-
 /**
 Diplomes
 **/
@@ -301,7 +311,6 @@ Diplomes
 iframe{
     margin: auto;
 }
-
 #page-up{
     position: fixed;
     bottom: 24px;

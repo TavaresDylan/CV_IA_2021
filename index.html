@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tavares Dyan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles-original.css">
-    <link rel="stylesheet" href="assets/css/media-queries.css">
-
+    <!-- TODO meta description -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Original CSS -->
+    <!--<link rel="stylesheet" href="assets/css/styles-original.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">-->
+    <!-- Preprocessed CSS with Sass -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Tab icon -->
     <link rel="icon" type="image/png" href="https://img.icons8.com/cotton/64/000000/code.png/">
     <!-- Police de caractères -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,20 +21,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body class="">
+<body>
 
     <button id="page-up" class="btn btn-outline-dark" onclick="window.location.href='#header-mobile'"><i class="fas fa-arrow-circle-up"></i></button>
 
     <header id="header-mobile">
         <nav class="navbar navbar-dark bg-success" aria-label="Sixth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Dylan Tavares</a>
+                <a class="navbar-brand" href="#">DT-dev</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarsExample06">
                     <ul id="list-nav-mobile" class="navbar-nav me-auto mb-2 mb-xl-0">
                         <li><a class="link-nav" href="#home">Home</a></li>
@@ -45,8 +47,7 @@
             </div>
         </nav>
     </header>
-    <header id="header-xl" class="">
-
+    <header id="header-xl">
         <div id="container-avatar">
             <img src="assets/img/Photo.jpg" alt="avatar">
         </div>
@@ -68,8 +69,8 @@
         </nav>
         <span id="thx">Created by Dylan Tavares with ❤️</span>
     </header>
-    <div id="main" class="container">
-        <section class="">
+    <main id="main" class="container">
+        <section>
             <h2 id="home">
                 Développeur <span class="typer" id="some-id" data-words="Web,Mobile,I.A" data-delay="350"
                     data-colors="#FFC107,#0249ef,purple">
@@ -105,6 +106,7 @@
 
             <div id="exp">
                 <h3>Experiences</h3>
+                <p>Par mes nombreuses expériences dans différents domaine , je suis très souple et sais m'adapter à un grand nombre de situations</p>
                 <ul id="class-exp">
                     <li>
                         <span class="dates">2020</span> <strong>- Manutentionnaire</strong></br>
@@ -154,22 +156,24 @@
                             class="fas fa-external-link-alt"></i></a></p>
                         
                     </li>
-                    <li>
-                        <span class="dates">2015</span> - Stage : Gestion industrielle, usinage 5axes</br>
-                        Montluçon - A.C.C
-                    </li>
-                    <li>
-                        <span class="dates">2014</span> - Stage : Fraiseur traditionnel et numérique</br>
-                        <i class="fas fa-map-marked-alt"></i>Montluçon - DAM
-                    </li>
-                    <li>
-                        <span class="dates">2013</span> - Stage : Fraiseur traditionnel</br>
-                        <i class="fas fa-map-marked-alt"></i>Saint-Victor - A.M.T.E.K
-                    </li>
-                    <li>
-                        <span class="dates">2012</span> - Stage : Découverte usinage</br>
-                        <i class="fas fa-map-marked-alt"></i>Chamblet - Entreprise Barthazon
-                    </li>
+                    <ul class="stages-bp-container">
+                        <li class="stages-bp">
+                            <span class="dates">2015</span> - Stage : Gestion industrielle, usinage 5axes</br>
+                            Montluçon - A.C.C
+                        </li>
+                        <li class="stages-bp">
+                            <span class="dates">2014</span> - Stage : Fraiseur traditionnel et numérique</br>
+                            <i class="fas fa-map-marked-alt"></i>Montluçon - DAM
+                        </li>
+                        <li class="stages-bp">
+                            <span class="dates">2013</span> - Stage : Fraiseur traditionnel</br>
+                            <i class="fas fa-map-marked-alt"></i>Saint-Victor - A.M.T.E.K
+                        </li>
+                        <li class="stages-bp">
+                            <span class="dates">2012</span> - Stage : Découverte usinage</br>
+                            <i class="fas fa-map-marked-alt"></i>Chamblet - Entreprise Barthazon
+                        </li>
+                    </ul>
                 </ul>
             </div>
 
@@ -376,14 +380,14 @@
                     <div>
                         <h4>Envoyez-moi un message</h4>
                         <label for="">Name</label>
-                        <input class="form-control mb-2" type="text">
+                        <input class="form-control mb-2" type="text" placeholder="John Doe">
                         <label for="">Mail</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">@</span>
                             <input type="text" class="form-control" placeholder="exemple@sas.fr" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
-                        <textarea class="p-3 form-control" name="" id="" cols="30" rows="20"></textarea>
+                        <textarea class="p-3 form-control" name="" id="" cols="30" rows="20" placeholder="Ecrivez votre message ici ..."></textarea>
 
                         <input class="btn btn-warning m-3" value="Envoyer" type="submit">
                     </div>
@@ -402,7 +406,7 @@
 
 
         </section>
-    </div>
+    </main>
 
     <!-- script JS perso -->
     <script src="assets/js/app.js"></script>

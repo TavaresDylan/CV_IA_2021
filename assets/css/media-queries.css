@@ -1,3 +1,4 @@
+/* ECRAN <1580px */
 @media screen and (max-width: 1580px){
     #header-xl{
         display: none;
@@ -13,6 +14,7 @@
     }
     #navbarsExample06>ul{
         flex-direction: row;
+        justify-content: center;
     }
     #navbarsExample06>ul>li{
         margin: 0;
@@ -22,6 +24,7 @@
         margin-left:auto;
     }
 }
+/* ECRAN > 1580px */
 @media screen and (min-width: 1580px){
     #header-mobile{
         display: none;
@@ -31,7 +34,7 @@
 
     }
 }
-
+/* ECRAN < 960px */
 @media screen and (max-width: 960px){
     #img-about{
         width: 230px;
