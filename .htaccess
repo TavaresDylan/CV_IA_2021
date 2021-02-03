@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^dt-developpement.fr [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.dt-developpement.fr%{HTTP_HOST}%{REQUEST_URI}

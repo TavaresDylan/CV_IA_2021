@@ -175,14 +175,7 @@ Header Side
     justify-content: center;
     font-size: 22px;
 }
-#catch{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 34px;
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-}
+
 #contact-container{
     background:#349250;
     border-radius: 2px;
@@ -214,20 +207,35 @@ ABOUT
 #about{
     margin-top: 32px;
     margin-bottom: 32px;
+    #catch{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 34px;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        text-align: center;
+    }
+    #desc{
+        display: flex;
+        align-items: center;
+        div{
+            margin: 0 24px 0 24px;
+        }
+        #container-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: min-content;
+            #img-about{
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
-#container-img{
-    display: flex;
-}
-#img-about{
-    width: 360px;
-    height: 360px;
-}
-#desc{
-    display: flex;
-}
-#desc>div{
-    margin: 0 24px 0 24px;
-}
+
 /**
 Skills
 **/
@@ -312,6 +320,7 @@ iframe{
     margin: auto;
 }
 #page-up{
+    display: none;
     position: fixed;
     bottom: 24px;
     right: 15px;
@@ -335,4 +344,19 @@ iframe{
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
+}
+
+@media screen and (max-width: 1007px){
+    #header-xl{
+        display: none;
+    }
+    #header-mobile{
+        display: block;
+        position: fixed;
+        width: 100vw;
+    }
+    #main{
+        margin: auto;
+        margin-top: 60px;
+    }
 }
