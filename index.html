@@ -7,9 +7,6 @@
     <title>Tavares Dyan</title>
     <!-- TODO meta description -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Original CSS -->
-    <!--<link rel="stylesheet" href="assets/css/styles-original.css">
-    <link rel="stylesheet" href="assets/css/media-queries.css">-->
     <!-- Preprocessed CSS with Sass -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Tab icon -->
@@ -26,7 +23,7 @@
     <button id="page-up" class="btn btn-outline-dark" onclick="window.location.href='#header-mobile'"><i class="fas fa-arrow-circle-up"></i></button>
 
     <header id="header-mobile">
-        <nav class="navbar navbar-dark bg-success" aria-label="Sixth navbar example">
+        <nav class="navbar navbar-dark" aria-label="Sixth navbar example">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">DT-dev</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,7 +46,7 @@
     </header>
     <header id="header-xl">
         <div id="container-avatar">
-            <img src="assets/img/Photo.jpg" alt="avatar">
+            <img src="assets/img/Logo.png" alt="avatar">
         </div>
         <h1>Dylan Tavarès</h1>
         <ul id="social-links">
@@ -69,7 +66,7 @@
         </nav>
         <span id="thx">Created by Dylan Tavares with ❤️</span>
     </header>
-    <main id="main" class="container">
+    <main id="main" class="">
         <section>
             <h2 id="home">
                 Développeur <span class="typer" id="some-id" data-words="Web,Mobile,I.A" data-delay="350"
@@ -78,7 +75,7 @@
                 <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|"
                     data-owner="some-id"></span>
             </h2>
-            
+
             <div id="about">
                 <h3>A propos</h3>
                 <span id="catch">Un jeune développeur passionné par les nouvelles technologies du web et de la
@@ -89,20 +86,29 @@
                     </div>
                     <div>
                         <h4>Développeur Web / Etudiant Développeur I.A</h4>
-                        <p class="animate__backInLeft text-desc">Bonjour, je suis <span class="highlighted">Dylan
-                                Tavarès</span>, jeune développeur web installé dans la ville de Toulouse depuis peu.</p>
-                        <p class="animate__backInRight text-desc">Mon parcours est assez atypique, ma formation de base
-                            est la mécanique de précision, mais c'est après 1 an à travailler dans les usines que j'ai
-                            choisi de faire de <span class="highlighted">ma passion mon nouveau métier</span>.</p>
-                        <p class="text-desc">Début d'année <span class="highlighted">2019</span> je commençais une
-                            formation de Développeur web et web mobile pour obtenir le dîplome équivanent BTS/BAC+2 en
-                            fin d'année.</p>
-                        <p class="text-desc">Aujourd'hui en <span class="highlighted">2020</span> et après avoir
-                            travailler sur mon site web personnel je suis en <strong>recherche d'un poste de développeur
-                                web débutant</strong>.</p>
+                        <p>Bonjour et bienvenue sur mon portfolio. Je suis <span class="highlighted">Dylan
+                                Tavarès</span>, jeune développeur web et étudiant I.A installé dans la ville de Toulouse depuis peu.</p>
+                        <p class="animate__backInRight text-desc">Passionné par le numérique et l'informatique depuis toujours.<span class="highlighted"> J'ai fait de ma passion mon nouveau métier</span>.</p>
+                        <p>Les besoins en développement de nouvelles technologies grandissant , notament avec l'arrivée de l'intelligence artificielle</p>
+                        <p> Je suis actuellement en formation à l'école Microsoft by <a href="https://simplon.co/formation/ecole-ia-microsoft/23">Simplon</a> dans le magnifique campus <a href="https://lacite.eu/">La cité</a>.</p>
+                        <img src="assets/img/Simplon300x100.png" alt="">
+                        <img src="assets/img/microsoft300x90.png" alt="">
                     </div>
                 </div>
             </div>
+
+            <!--<div id="ai">
+                <h3>I.A</h3>
+                <div id="ai-container">
+                    <div id="text-ai">
+                        <p>Le nombre d'applications pour les intelligences artificielles sont tellement nombreuse et pour beaucoup ne se pas encore réellement définies. C'est un domaine en plein essort et rempli de possibilités</p>
+                        <p>L'exploration du big data et l'application d'une I.A grâce à ce nombre colossale de données permet de résoudre des problèmes qui paraîssaient jusque alors insoluble.</p>
+                    </div>
+                    <div id="">
+                        <img src="assets/img/ai.png" alt="">
+                    </div>
+                </div>
+            </div>-->
 
             <div id="exp">
                 <h3>Experiences</h3>
@@ -131,6 +137,7 @@
                         Montluçon - Brulerie Bretonie</br>
                         <p>Vente et conseils de thé, café, accessoires. Gestion informatique et
                             création d’une carte de consommation sur photoshop.</p>
+                            <hr>
                         <p><strong>- Stage : Technicien monteur PC</strong></p>
                         <p>Montluçon - M.D.I</p>
                         <p><i class="fas fa-globe"></i> Site internet : <a href="http://mdi03.com/">mdi03.com <i
@@ -138,8 +145,9 @@
                         <p>Réparation, entretien et montage PC sur mesure. Installation de
                             systèmes d’exploitations. Nettoyage hardware/software.
                         </p>
-                        - Stage : Technicien Réparateur PC/Mobile
-                        Montluçon - Easy Repair
+                        <hr>
+                        <p><strong>- Stage : Technicien Réparateur PC/Mobile</strong></p>
+                        <p>Montluçon - Easy Repair</p>
                         Réparation, entretien PC. Nettoyage hardware. Diagnostique et
                         réparation téléphone mobile, matériel informatique et consoles.
                     </li>
@@ -203,7 +211,7 @@
             <!-- Button trigger modal -->
             <div class="d-flex justify-content-center m-5">
 
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" class="btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <i class="fas fa-download"></i> Téléchargez mon CV <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -243,31 +251,37 @@
                     <div class="skills-box">
                         <ul class="skill-list">
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F0a%2FPython.svg%2F768px-Python.svg.png&f=1&nofb=1"
+                                    src="assets/img/python120x120.png"
                                     alt="Logo Pyhton">
                                 <p>Pyhton</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F1b%2FR_logo.svg%2F1200px-R_logo.svg.png&f=1&nofb=1"
+                                    src="assets/img/r-logo120x120.png"
                                     alt="Logo R">
                                 <p>R</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F01%2FCreated_with_Matplotlib-logo.svg%2F1024px-Created_with_Matplotlib-logo.svg.png&f=1&nofb=1"
+                                    src="assets/img/matplotlib120x120.png"
                                     alt="Logo Matplotlib">
                                 <p>Matplotlib</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F05%2FScikit_learn_logo_small.svg%2F1200px-Scikit_learn_logo_small.svg.png&f=1&nofb=1"
+                                    src="assets/img/sklearn120x120.png"
                                     alt="Logo SkLearn">
                                 <p>Sci-Kit Learn</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://user-images.githubusercontent.com/315810/92161415-9e357100-edfe-11ea-917d-f9e33fd60741.png"
+                                    src="assets/img/seaborn120x120.png"
                                     alt="">
                                 <p>Seaborn</p>
                             </li>
+                            <li><img class="img-skills"
+                                src="assets/img/jupyterlab120x120.png"
+                                alt="">
+                                <p>Jupyterlab</p>
+                            </li>
                         </ul>
+                        <img class="img-fluid mt-4" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fshawnennis.com%2Fwp-content%2Fuploads%2F2018%2F06%2Fml-workflow.jpg&f=1&nofb=1" alt="">
                     </div>
                 </div>
                 <div id="second-container">
@@ -277,27 +291,27 @@
                         <h5 class="skill-box-title">Front-end</h5>
                         <ul class="skill-list">
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2017%2F07%2FHTML5_badge.png&f=1&nofb=1"
+                                    src="assets/img/html120x120.png"
                                     alt="Logo Html5">
                                 <p>HTML5</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.smith-consulting.com%2Fportals%2F0%2FImages%2FDNN-Store%2Fcss.png&f=1&nofb=1"
+                                    src="assets/img/css120x120.png"
                                     alt="Logo Css3">
                                 <p>CSS3</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupgrade-hub.com%2Fimages%2Flogo-images%2Fjavascript_logo.png&f=1&nofb=1"
+                                    src="assets/img/js120x120.png"
                                     alt="Logo JavaScript">
                                 <p>JavaScript</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://www.ambient-it.net/wp-content/uploads/2016/04/bootstrap-logo-175.png"
+                                    src="assets/img/bootstrap120x120.png"
                                     alt="Logo Bootstrap4">
                                 <p>Bootstrap4</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+                                    src="assets/img/sass120x120.png"
                                     alt="Logo Sass">
                                 <p>Sass</p>
                             </li>
@@ -308,7 +322,7 @@
                         <h5 class="skill-box-title">Back-end</h5>
                         <ul class="skill-list">
                             <li><img class="img-skills"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/2000px-Webysther_20160423_-_Elephpant.svg.png"
+                                    src="assets/img/php120x120.png"
                                     alt="Php logo">
                                 <p>PHP 7.3</p>
                             </li>
@@ -328,9 +342,14 @@
                                 <p>Terminal / Bash</p>
                             </li>
                             <li><img class="img-skills"
-                                    src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png"
+                                    src="assets/img/docker120x120.png"
                                     alt="Docker logo">
                                 <p>Docker</p>
+                            </li>
+                            <li><img class="img-skills"
+                                src="assets/img/git120x120.png"
+                                alt="Git logo">
+                                <p>Git</p>
                             </li>
                         </ul>
                     </div>
@@ -356,7 +375,7 @@
                 </div>
             </div>
 
-            <div>
+            <!--<div>
                 <h3>Diplômes</h3>
                 <ul id="dip-list">
                     <li><span class="dates">2019</span>
@@ -371,13 +390,13 @@
                         <div><i class="fas fa-graduation-cap dip-icon"></i></div>BEP
                     </li>
                 </ul>
-            </div>
+            </div>-->
             
 
             <div id="contact">
                 <h3>Contact</h3>
                 <div id="contact-container">
-                    <div>
+                    <div id="contact-form">
                         <h4>Envoyez-moi un message</h4>
                         <label for="">Name</label>
                         <input class="form-control mb-2" type="text" placeholder="John Doe">
@@ -389,14 +408,11 @@
                         </div>
                         <textarea class="p-3 form-control" name="" id="" cols="30" rows="20" placeholder="Ecrivez votre message ici ..."></textarea>
 
-                        <input class="btn btn-warning m-3" value="Envoyer" type="submit">
+                        <input class="btn-block btn-warning m-3" value="Envoyer" type="submit">
                     </div>
                     <div class="p-3" id="tel-postal">
-                        <p><span>Par téléphone</span></p>
                         <a class="btn btn-warning btn-lg m-5" href="tel:0614144256"><i class="fas fa-phone-alt"></i>
                             06/14/14/42/56</a>
-                        <p><span>Par courrier</span></p>
-                        <p class="text-center"> 7 Chemin du baron </br> 31200 </br>Toulouse</p>
                         <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                             src="https://www.openstreetmap.org/export/embed.html?bbox=1.4321655035018923%2C43.64607546482182%2C1.435062289237976%2C43.64780865654602&amp;layer=mapnik&amp;marker=43.64694303736717%2C1.433613896369934"
                             style="border: 1px solid black"></iframe>
@@ -408,6 +424,8 @@
         </section>
     </main>
 
+    <!-- GSAP for animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <!-- script JS perso -->
     <script src="assets/js/app.js"></script>
     <!-- Auto-Typing for title JS -->
