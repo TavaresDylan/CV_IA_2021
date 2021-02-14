@@ -174,7 +174,6 @@ Header Side
     margin-left: 336px;
     padding: 34px;
     section{
-        margin-top: 3%;
         margin-bottom: 3%;
     }
 }
@@ -262,6 +261,29 @@ Experience
             box-shadow: 0 3px 3px #0000005e;
         }
     }
+    .stages-bp-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 0;
+        column-gap: 2vw;
+    }
+    .stages-bp{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+        .dates{
+            background-color: $primary;
+            font-size: 24px;
+            border-radius: 2px;
+            font-family: 'Oswald';
+            padding: 4px;
+            text-shadow: 0 0 2px#000000;
+            margin-bottom: 12px;
+            color:white;
+            box-shadow: 0 3px 3px #0000005e;
+        }
+    }
 }
 
 
@@ -274,20 +296,20 @@ Experience
 Skills
 **/
 .skills-box{
-    border: 2px solid red;
+    //border: 2px solid red;
     margin: 70px 0;
     .skill-list{
-        border: 2px solid green;
+        //border: 2px solid green;
         margin:0;
     }
     li{
-        border: 2px solid purple;
+        //border: 2px solid purple;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         p{
-            border: 2px solid rgb(255, 0, 200);
+            //border: 2px solid rgb(255, 0, 200);
             margin: 0;
         }
     }
@@ -337,18 +359,7 @@ iframe{
 #page-up>i{
     font-size: 32px;
 }
-.stages-bp-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-left: 0;
-    column-gap: 2vw;
-}
-.stages-bp{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0px;
-}
+
 
 .highlighted{
     font-weight: bold;
@@ -433,6 +444,12 @@ iframe{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h2{
+        font-size: 52px;
     }
 }
 
