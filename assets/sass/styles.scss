@@ -14,6 +14,7 @@ body{
     width: 100vw;
     ul{
         list-style: none;
+        padding:0;
     }
 }
 /**
@@ -197,14 +198,6 @@ CONTACT
 #second-container{
     overflow: hidden;
 }
-.img-skills{
-    width: 62px;
-}
-.skills-box>ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
 
 /**
 ABOUT
@@ -240,6 +233,7 @@ ABOUT
         }
     }
 }
+
 /**
 Experience
 **/
@@ -286,31 +280,32 @@ Experience
     }
 }
 
-
-#formation>li{
-    display: flex;
-    flex-direction: column;
-}
-
 /**
 Skills
 **/
-.skills-box{
-    //border: 2px solid red;
-    margin: 70px 0;
-    .skill-list{
-        //border: 2px solid green;
-        margin:0;
+#skills{
+    #ai-container{
     }
-    li{
-        //border: 2px solid purple;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        p{
-            //border: 2px solid rgb(255, 0, 200);
-            margin: 0;
+    .skills-box{
+        //margin: 70px 0;
+        .skill-list{
+            margin:0;
+            padding:0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .img-skills{
+                    width: 62px;
+                }
+                p{
+                    margin: 0;
+                }
+            }
         }
     }
 }
@@ -321,30 +316,6 @@ Modal du pdf
 .modal-body{
     height:  80vh; 
 }
-/**
-Diplomes
-**/
-#dip-list{
-    text-shadow: 0 0 2px black;
-    display: grid;
-    padding: 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: white;
-}
-#dip-list>li{
-    box-shadow: 0 0 2px black;
-    margin:24px;
-    padding: 18px;
-    border-radius:8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: $primary;
-}
-.dip-icon{
-    margin-bottom: 12px;
-    font-size: 64px;
-}
 #tel-postal>p>span{
     display: flex;
     justify-content: center;
@@ -352,6 +323,8 @@ Diplomes
 }
 iframe{
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 #page-up{
     display: none;
@@ -359,7 +332,6 @@ iframe{
 #page-up>i{
     font-size: 32px;
 }
-
 
 .highlighted{
     font-weight: bold;
@@ -441,27 +413,68 @@ iframe{
         overflow: hidden;
     }
     .skill-list{
-        display: grid;
+        display: grid !important;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 413px){
     h2{
         font-size: 52px;
+        height: 123px;
     }
-}
-
-#ai{
-    border: 2px solid red;
-    #ai-container{
-        border: 2px solid blue;
-        img{
-            width: 80%;
-            float: right;
-            //height: 20vh;
-            border: 2px solid purple;
+    .skill-list{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #list-nav-mobile{
+        text-align: center;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap:24px;
+    }
+    #page-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        i{
+            font-size: 18px;
         }
     }
+    iframe{
+        width: 50%;
+        height: 50%;
+    }
 }
+/*
+#formation>li{
+    display: flex;
+    flex-direction: column;
+}
+//Diplomes
+#dip-list{
+    text-shadow: 0 0 2px black;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+#dip-list>li{
+    box-shadow: 0 0 2px black;
+    margin:24px;
+    padding: 18px;
+    border-radius:8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $primary;
+}
+.dip-icon{
+    margin-bottom: 12px;
+    font-size: 64px;
+}
+*/
